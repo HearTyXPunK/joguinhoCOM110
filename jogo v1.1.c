@@ -8,14 +8,15 @@
 #include<conio.h>
 
 int main(){
-  int i=1, j=1, op, op2,op3;
+  int i=1, j=1, op, op2, op3;
 	int k=0, t=0;
 	int A, B, C, D;
 	int numeros[2][2];
 	int resposta[2][2];
 	int acertos=0;
+	int matriz[2][2], par, pontos=0;
 	char c, nome[20];
-	int facil[2][2],i2, j2, par, pontos=0;
+
   
 do{
 
@@ -182,9 +183,9 @@ switch (op){
 							for(i=0;i<2;i++){
 								for(j=0;j<2;j++){
 									if(i==1 && j==1)
-										facil[i][j]= facil[0][0];
+										matriz[i][j]= matriz[0][0];
 									else
-										facil[i][j]= rand() % 100;
+										matriz[i][j]= rand() % 100;
 								}
 							}
 							t=2;
@@ -196,7 +197,7 @@ switch (op){
 								for(i=0;i<2;i++){
 									printf("\n%51c",' ');
 									for(j=0;j<2;j++){
-										printf("%d ", facil[i][j]);
+										printf("%d ", matriz[i][j]);
 									}
 								}
 								sleep(1);
@@ -205,7 +206,7 @@ switch (op){
 							system("cls");
 							printf("%40c Digite o número que tem um par:",' ');
 							scanf(" %d", &par);
-							if(par == facil[0][0]){
+							if(par == matriz[0][0]){
 								printf("\n%40c Parabéns você acertou!\n",' ');
 								pontos++;
 								printf("%30c Você tem %d ponto(s).",' ', pontos);
