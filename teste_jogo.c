@@ -10,7 +10,6 @@
 #define NC 2
 
 int main(){
-	
   	int i=1, j=1, op;
 	int k=0, t=0;
 	int A, B, C, D;
@@ -21,72 +20,24 @@ int main(){
 	
   
 do{
-  	for(i=1; i<=11; i++){
-    	for(j=1; j<=60; j++){
-      		if(i==1 || i==3 || i==10 || i==11){
-        		printf("#");
-    		}
-      		else if (i==2){
-        		if(j>=1 && j<=20){
-            		printf("#");
-        		}
-        	else if(j>37){
-        		printf("#");
-			}
-        	else if(j>=21 && j<=37){
-            	printf(" JOGO DA MEMORIA ");
-            	j=37;
-        	}
-      		}
-      		else if(i==5){
-        		if(j==1 || j==2 || j==59 || j==60){
-            		printf("#");
-        		}
-        		else if(j>22){
-        			printf(" ");
-				}
-        		else{
-        			printf(" Escolha uma opcao: ");
-        			j=22;
-        		}
-      		}
-      		else if(i==7){
-        		if(j==1 || j==2 || j==59 || j==60){
-            		printf("#");
-        		}
-        		else if(j>12){
-        			printf(" ");
-				}
-        		else{
-        			printf(" 1. Jogar ");
-        			j=12;
-        		}
-      		}
-      		else if(i==8){
-        		if(j==1 || j==2 || j==59 || j==60){
-            		printf("#");
-        		}
-        		else if(j>11){
-        			printf(" ");
-				}
-        	else{
-        		printf(" 2. Sair ");
-        		j=11;
-        	}
-      		}
-      
-      		else {
-        		if (j==1 || j==2 || j==59 || j==60){
-        		printf("#");
-        		}
-        		else{
-            	printf(" ");
-        		}
-    		}
-  		}
-  printf("\n");
-	} //atÃ© aqui Ã© o menu feito
-printf("\n    Opcao: ");
+	system("color F0");                                                                                                                         
+  	printf("=======================================================================================================================\n");
+    printf("================================================ JOGO DA MEMORIA ======================================================\n");
+    printf("=======================================================================================================================\n");
+    printf("|                                                                                                                    ==\n");
+    printf("|                                               Escolha um opcao:                                                    ==\n");
+    printf("|                                                                                                                    ==\n");
+    printf("|                                               1. Jogar                                                             ==\n");
+    printf("|                                               2. Sair                                                              ==\n");
+    printf("|                                                                                                                    ==\n");
+    printf("|                                                                                                                    ==\n");
+    printf("|                                                                                                                    ==\n");
+    printf("|                                                                                                                    ==\n");
+    printf("|                                                                                                                    ==\n");
+    printf("=======================================================================================================================\n");
+    printf("=======================================================================================================================\n");
+	 //até aqui é o menu feito
+printf("\n  Opcao: ");
 scanf("%d", &op);
 printf("\n");
 
@@ -155,7 +106,8 @@ switch (op){
 		}
 		printf("Cada acerto vale um ponto. \n");
 		printf("%s, TOTAL DE PONTOS = %d de 24\n\n", nome, acertos);
-	case 2:
+	case 2: 
+	
 	break;
 
 }
