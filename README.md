@@ -1,6 +1,7 @@
 # joguinhoCOM110
 Jogo da Memória
 COM110.1 – Fundamentos de programação
+
 Universidade Federal de Itajubá
 
 Formular um jogo que teste a memória dos jogadores, de acordo com os modos de jogo e dificuldades.
