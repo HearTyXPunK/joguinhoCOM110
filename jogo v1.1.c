@@ -28,7 +28,7 @@ do{
     printf("%c                                                                                                                     %c\n", 179, 179);
     printf("%c                                              1. Jogar                                                               %c\n", 179, 179);
     printf("%c                                              2. Sair                                                                %c\n", 179, 179);
-    printf("%c                                              3. Créditos                                                            %c\n", 179, 179);
+    printf("%c                                              3. Cr%cditos                                                            %c\n", 179,130, 179);
     printf("%c                                                                                                                     %c\n", 179, 179);
     printf("%c                                                                                                                     %c\n", 179, 179);
     printf("%c                                                                                                                     %c\n", 179, 179);
@@ -69,9 +69,9 @@ switch (op){
 		    printf("%c                                                                                                                     %c\n", 179, 179);
 		    printf("%c                                               Escolha a dificuldade                                                 %c\n", 179, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
-		    printf("%c                                                1.Fácil                                                              %c\n", 179, 179);
-		    printf("%c                                                2.Médio                                                              %c\n", 179, 179);
-		    printf("%c                                                3.Difícil                                                            %c\n", 179, 179);
+		    printf("%c                                                1.F%ccil                                                              %c\n", 179, 160,179);
+		    printf("%c                                                2.M%cdio                                                              %c\n", 179, 130, 179);
+		    printf("%c                                                3.Dif%ccil                                                            %c\n", 179, 161, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
@@ -90,7 +90,7 @@ switch (op){
 						j=0;
 						for(k=0; k<5; k++){
 						printf("\n%40c Jogada %d: \n", ' ', k+1);
-						printf("%40c Memorize os numeros! \n",' ');
+						printf("%40c Memorize os n%cmeros! \n",' ', 163);
 						printf("%40c PRESSIONE ENTER PARA INICIAR.\n",' ');
 						do{
 				        	c = getch();
@@ -103,7 +103,7 @@ switch (op){
 								}
 						}
 						
-						t=5;
+						t=4;
 						do{
 							system("cls");
 							printf("%50c Tempo: %d\n\n", ' ', t);
@@ -120,7 +120,7 @@ switch (op){
 						}
 						while(t>0);
 						system("cls");
-						printf("\n%30cInsira os numeros memorizados de acordo com a matriz: \n",' ');
+						printf("\n%30cInsira os n%cmeros memorizados de acordo com a matriz: \n",' ', 163);
 						printf("\n%50c  |A  B|\n%50c  |C  D|\n\n",' ',' ');
 						printf("%50c  A = ",' ');
 						scanf("%d", &resposta[0][0]);
@@ -161,9 +161,9 @@ switch (op){
 		    printf("%c                                                                                                                     %c\n", 179, 179);
 		    printf("%c                                               Escolha a dificuldade                                                 %c\n", 179, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
-		    printf("%c                                                1.Fácil                                                              %c\n", 179, 179);
-		    printf("%c                                                2.Médio                                                              %c\n", 179, 179);
-		    printf("%c                                                3.Difícil                                                            %c\n", 179, 179);
+		    printf("%c                                                1.F%ccil                                                              %c\n", 179,160, 179);
+		    printf("%c                                                2.M%cdio                                                              %c\n", 179, 130, 179);
+		    printf("%c                                                3.Dif%ccil                                                            %c\n", 179, 161, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
 		    printf("%c                                                                                                                     %c\n", 179, 179);
@@ -188,7 +188,7 @@ switch (op){
 										matriz[i][j]= rand() % 100;
 								}
 							}
-							t=2;
+							t=2.5;
 							do{
 								system("cls");
 								printf("%50c Tempo: %d\n\n", ' ', t);
@@ -204,16 +204,16 @@ switch (op){
 							}
 							while(t>0);
 							system("cls");
-							printf("%40c Digite o número que tem um par:",' ');
+							printf("%40c Digite o n%cmero que tem um par:",' ', 163);
 							scanf(" %d", &par);
 							if(par == matriz[0][0]){
-								printf("\n%40c Parabéns você acertou!\n",' ');
+								printf("\n%40c Parab%cns voc%c acertou!\n",' ', 130, 136);
 								pontos++;
-								printf("%30c Você tem %d ponto(s).",' ', pontos);
+								printf("%40c Voc%c tem %d ponto(s).\n",' ', 136, pontos);
 							}
 							else{
-								printf("\n%40c Você errou!\n",' ');
-								printf("%30c Você tem %d ponto(s).",' ', pontos);
+								printf("\n%40c Voc%c errou!\n",' ', 136);
+								printf("%30c Voc%c tem %d ponto(s).",' ', 136, pontos);
 							}
 							system("pause");
 							system("cls");
