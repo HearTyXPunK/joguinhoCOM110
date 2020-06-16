@@ -5,7 +5,7 @@
 #include<time.h>
 #include<locale.h>
 #include<unistd.h>
-
+//com base no layout desenvolvido recomendamos abrir o jogo numa novo aba https://random.matmb.repl.run
 
 int main(){
   int i=1, j=1, op, op2, op3;
@@ -22,20 +22,20 @@ do{
 
 
 	system("clear");                                                                                                                      
-    printf("============================================================ JOGO DA MEMÓRIA ===========================================================\n");
+    printf("========================================================== JOGO DA MEMÓRIA =============================================================\n");
     printf("========================================================================================================================================\n");
     printf("|                                                                                                                                      |\n");
-    printf("|                                          Escolha uma opção                                                                           |\n");
+    printf("|                                                        Escolha uma opção                                                             |\n");
     printf("|                                                                                                                                      |\n");
-    printf("|                                              1. Jogar                                                                                |\n");
-    printf("|                                              2. Sair                                                                                 |\n");
-    printf("|                                              3. Créditos                                                                             |\n");
+    printf("|                                                        1. Jogar                                                                      |\n");
+    printf("|                                                        2. Sair                                                                       |\n");
+    printf("|                                                        3. Créditos                                                                   |\n");
     printf("|                                                                                                                                      |\n");
     printf("|                                                                                                                                      |\n");
     printf("|                                                                                                                                      |\n");
     printf("|                                                                                                                                      |\n");
     printf("========================================================================================================================================\n");
-	//atÃ© aqui menu geral feito
+	//até aqui menu geral feito
 		printf("\n  Opção: ");
 		scanf(" %d", &op);
 		printf("\n");
@@ -45,13 +45,13 @@ switch (op){
 	
 	case 1:
 	system("clear");
-	printf("============================================================ JOGO DA MEMÓRIA ===========================================================\n");
+	printf("========================================================== JOGO DA MEMÓRIA =============================================================\n");
     printf("========================================================================================================================================\n");
     printf("|                                                                                                                                      |\n");
-    printf("|                                          Escolha uma opção                                                                           |\n");
+    printf("|                                                    Escolha uma opção                                                                 |\n");
     printf("|                                                                                                                                      |\n");
-    printf("|                                              1. Memorize os elementos                                                                |\n");
-    printf("|                                              2. Guarde os pares                                                                      |\n");
+    printf("|                                                   1. Memorize os elementos                                                           |\n");
+    printf("|                                                   2. Guarde os pares                                                                 |\n");
     printf("|                                                                                                                                      |\n");
     printf("|                                                                                                                                      |\n");
     printf("|                                                                                                                                      |\n");
@@ -65,14 +65,14 @@ switch (op){
 			case 1:
 				//modo de jogo 1
 			system("clear");
-				printf("============================================================ JOGO DA MEMÓRIA ===========================================================\n");
+				printf("========================================================== JOGO DA MEMÓRIA =============================================================\n");
    				printf("========================================================================================================================================\n");
    				printf("|                                                                                                                                      |\n");
-   				printf("|                                          Escolha uma opção                                                                           |\n");
+   				printf("|                                                      Escolha uma opção                                                               |\n");
     			printf("|                                                                                                                                      |\n");
-    			printf("|                                              1. Fácil                                                                                |\n");
-    			printf("|                                              2. Médio                                                                                |\n");
-    			printf("|                                              3. Difícil                                                                              |\n");
+    			printf("|                                                        1. Fácil                                                                      |\n");
+    			printf("|                                                        2. Médio                                                                      |\n");
+    			printf("|                                                        3. Difícil                                                                    |\n");
     			printf("|                                                                                                                                      |\n");
     			printf("|                                                                                                                                      |\n");
     			printf("|                                                                                                                                      |\n");
@@ -85,7 +85,7 @@ switch (op){
 			  	case 1:
 				  	//jogo no fácil
 						srand(time(NULL));
-						printf("%40c Jogador, digite seu nome: ", ' ');
+						printf("%50c Jogador, digite seu nome: ", ' ');
 						scanf("%s", nome);
 						i=0;
 						j=0;
@@ -94,6 +94,8 @@ switch (op){
 						printf("%40c Memorize os números! \n",' ');
 						printf("%40c PRESSIONE ENTER PARA INICIAR.\n",' ');
 						getchar();
+            getchar();
+
 						for(i=0; i<2; i++){
 							for(j=0; j<2; j++){
 								numeros[i][j] = (rand() % 30);
@@ -144,8 +146,9 @@ switch (op){
 						}
 						printf("Cada acerto vale um ponto. \n");
 						printf("%s, TOTAL DE PONTOS = %d de 24\n\n", nome, acertos);
-            printf("Pressione ENTER para continuar");
+            printf("%40c Pressione ENTER para continuar", ' ');
 						getchar();
+            getchar();
 						break;
 				case 2:
 				//médio
@@ -156,14 +159,14 @@ switch (op){
 			case 2:
 				//modo de jogo 2
 			system("clear");
-				printf("============================================================ JOGO DA MEMÓRIA ===========================================================\n");
+				printf("========================================================== JOGO DA MEMÓRIA =============================================================\n");
    				printf("========================================================================================================================================\n");
    				printf("|                                                                                                                                      |\n");
-   				printf("|                                          Escolha uma opção                                                                           |\n");
+   				printf("|                                                      Escolha uma opção                                                               |\n");
     			printf("|                                                                                                                                      |\n");
-    			printf("|                                              1. Fácil                                                                                |\n");
-    			printf("|                                              2. Médio                                                                                |\n");
-    			printf("|                                              3. Difícil                                                                              |\n");
+    			printf("|                                                         1. Fácil                                                                     |\n");
+    			printf("|                                                         2. Médio                                                                     |\n");
+    			printf("|                                                         3. Difícil                                                                   |\n");
     			printf("|                                                                                                                                      |\n");
     			printf("|                                                                                                                                      |\n");
     			printf("|                                                                                                                                      |\n");
@@ -175,7 +178,7 @@ switch (op){
 			switch(op3){
 			  	case 1:
 			  			//fÃ¡cil
-			  			printf("%40c Jogador, digite seu nome: ", ' ');
+			  			printf("%50c Jogador, digite seu nome: ", ' ');
 							scanf("%s", nome);
 							
 			  			system("clear");
@@ -188,35 +191,38 @@ switch (op){
 										matriz[i][j]= rand() % 100;
 								}
 							}
-							t=3;
-							do{
-								system("clear");
-								printf("%50c Tempo: %d\n\n", ' ', t);
-								t--;
-								
-								for(i=0;i<2;i++){
-									printf("\n%51c",' ');
-									for(j=0;j<2;j++){
-										printf("%d ", matriz[i][j]);
-									}
-								}
-								sleep(1);
-							}
-							while(t>0);
+              t=4;
+              do{
+                system("clear");
+                printf("%50c Tempo: %d\n\n", ' ', t);
+                t--;
+                
+                for(i=0; i<2; i++){
+                  printf("%51c ", ' ');
+                  for(j=0; j<2; j++){
+                    printf("%d ", matriz[i][j]);
+                  }
+                printf("\n");	
+                }
+                sleep(1);
+              }
+              while(t>0);
+
 							system("clear");
-							printf("%40c Digite o número que tem um par:",' ');
+							printf("\n%40c Digite o número que tem um par:",' ');
 							scanf(" %d", &par);
 							if(par == matriz[0][0]){
-								printf("\n%40c Parabéns você acertou!\n",' ');
+								printf("\n%40c Parabéns %s, você acertou!\n",' ', nome);
 								pontos++;
 								printf("%40c Você tem %d ponto(s).\n",' ', pontos);
 							}
 							else{
-								printf("\n%40c Você errou!\n",' ');
-								printf("%30c Você tem %d ponto(s).",' ', pontos);
+								printf("\n%40c %s você errou!\n",' ', nome);
+								printf("%40c Você tem %d ponto(s).",' ', pontos);
 							}
-							printf("Pressione ENTER para continuar");
+							printf("%40c Pressione ENTER para continuar",' ');
 							getchar();
+              getchar();
 							break;
 				case 2:
 				//mÃ©dio
@@ -233,16 +239,18 @@ switch (op){
 	case 3:
 		system("clear");
 		printf("%40c Recurso não disponível no pre-alpha\n", ' ');
-		printf("Créditos estarão disponíveis no lançamento oficial\n");
-		printf("Pressione ENTER para continuar\n");
+		printf("%40c Créditos estarão disponíveis no lançamento oficial\n",' ');
+		printf("%40c Pressione ENTER para continuar\n", ' ');
 		getchar();
+    getchar();
 		break;
 	}
 	
 	
 }
 while(op!=2);
-printf("Pressione ENTER para continuar");
+printf("%40c Pressione ENTER para continuar",' ');
+getchar();
 getchar();
 return 0;
 }
