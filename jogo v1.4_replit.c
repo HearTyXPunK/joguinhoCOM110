@@ -18,7 +18,7 @@ void modo1(int i,int j,int t,int *pontos, char nome[],int n){//esse é a dificul
 	int numeros[n][n], resposta[n][n];
   setlocale(LC_ALL,"");
 	
-	srand(time(NULL));
+	srand( (unsigned)time(NULL) );
 	printf("%50c Jogador, digite seu nome: ", ' ');
 	scanf("%s", nome);
 	
@@ -88,7 +88,7 @@ void modo2(int i,int j,int t,int *pontos, char nome[]){
 	scanf("%s", nome);
 	
 	system("clear");
-	srand(time(NULL));
+	srand( (unsigned)time(NULL) );
 	for(i=0;i<2;i++){
 		for(j=0;j<2;j++){
 			if(i==1 && j==1)
