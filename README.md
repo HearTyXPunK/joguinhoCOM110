@@ -19,6 +19,7 @@ MODO DE JOGO 1: este modo de jogo consiste em memorizar os números de uma matri
 MODO DE JOGO 2: neste modo aparecerá na tela, por alguns segundos, uma matriz quadrada onde há números com e sem pares, e a quantidade de pares depende da dificuldade (fácil, médio e difícil). A matriz fica exposta durante um determinado tempo. O jogador deve memorizar os pares de números e digitar o número que possui um par separadamente. Para ilustrar, se aparecer o número 1 com par “1”, o jogador deverá digitar somente “1”.  Quando o jogo acabar aparecerá o nome do jogador, sua pontuação e novamente o menu do jogo onde pode escolher entre jogar ou sair.
 
 REGRAS PARA AMBOS OS MODOS:
+
 1.	Ao responder as matrizes, digitar apenas números inteiros;
 2.	Não digite símbolos especiais;
 3.	Aguarde o tempo para digitar;
@@ -26,6 +27,7 @@ REGRAS PARA AMBOS OS MODOS:
 5.	Seguir as orientações para responder ao jogo;
 6.	Não alterar código fonte;
 7.	Quando não lembrar de alguma resposta digite 101;
+
 C. Etapas de desenvolvimento: 
 1.	Criar o menu do jogo;
 2.	Caso digitado 1 o jogo continua, caso 2 o jogo finaliza;
@@ -40,8 +42,10 @@ C. Etapas de desenvolvimento:
 11.	Desenvolver um ranking dos jogadores (top 5);
 12.	Diversificar as cores das telas no jogo;
 13.	Créditos na opção 3.
+
 Etapas concluídas: 1,2,3,4,7,8 e 12.
 Etapas em desenvolvimento: 5, 6, 9, 10, 11 e 13.
+
 D. Links do código:
 https://repl.it/join/aulsdlpp-kaiqueleal
 https://repl.it/@KaiqueLeal/JogodaMemoriaversao1
