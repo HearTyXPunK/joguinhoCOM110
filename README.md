@@ -9,9 +9,11 @@ A.	Equipe de desenvolvimento:
 •	Adriano Lucas Ferreira - 2020006711
 •	Kaique de Souza Leal Silva - 2020003596
 •	Matheus Martins Batista – 2019005687
+
 B. Objetivo e regras: 
 Formular um jogo que teste a memória dos jogadores, de acordo com os modos de jogo e dificuldades.
 Ao iniciar o jogo, um menu é exibido com opções de 1- jogar, 2- sair, 3- créditos. Ao digitar 1, o usuário escreve seu nome e tem duas opções de jogo da memória para selecionar.
+
 MODO DE JOGO 1: este modo de jogo consiste em memorizar os números de uma matriz que ficarão disponíveis na tela por alguns segundos, o jogador deverá memorizar os números e a posição destes e depois digitar o número de cada posição separadamente. O usuário pode escolher entre 3 dificuldades de jogo para continuar (fácil, médio ou difícil). As dificuldades são matrizes 2x2, 3x3 e 4x4, respectivamente, com o tempo reduzido. Os pontos serão contados a partir dos acertos feitos pelo jogador. Acertos e erros são notificados após uma rodada. Ao fim das rodadas aparecerá o nome do jogador, sua pontuação e novamente o menu do jogo onde pode escolher entre jogar ou sair.
 
 MODO DE JOGO 2: neste modo aparecerá na tela, por alguns segundos, uma matriz quadrada onde há números com e sem pares, e a quantidade de pares depende da dificuldade (fácil, médio e difícil). A matriz fica exposta durante um determinado tempo. O jogador deve memorizar os pares de números e digitar o número que possui um par separadamente. Para ilustrar, se aparecer o número 1 com par “1”, o jogador deverá digitar somente “1”.  Quando o jogo acabar aparecerá o nome do jogador, sua pontuação e novamente o menu do jogo onde pode escolher entre jogar ou sair.
